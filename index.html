@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Executive Core - Dr. Lucas</title>
+</head>
+
+<body>
+  <!-- TopNavBar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">DR. LUCAS</div>
+      <div class="navbar-links">
+        <a class="nav-link active" href="#">Especialidades</a>
+        <a class="nav-link" href="#">Sobre</a>
+        <a class="nav-link" href="#">Cursos</a>
+        <a class="nav-link" href="#">Contato</a>
+      </div>
+      <div class="navbar-actions" style="display: flex; gap: 1rem; align-items: center;">
+        <button class="btn btn-primary nav-cta">Agendar Consulta</button>
+        <button class="mobile-menu-btn" aria-label="Abrir menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <!-- Header do menu -->
+    <div class="mobile-menu-header">
+      <div>
+        <div class="mobile-menu-brand">DR. LUCAS</div>
+        <div class="mobile-menu-tagline">Cirurgião Buco-Maxilo-Facial</div>
+      </div>
+      <button class="mobile-close-btn" aria-label="Fechar menu">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <!-- Links com números estilo editorial -->
+    <nav class="mobile-menu-links">
+      <a class="mobile-nav-item" href="#">
+        <span class="mobile-nav-number">01</span>
+        <span class="mobile-nav-label">Especialidades</span>
+        <span class="material-symbols-outlined mobile-nav-arrow">arrow_forward</span>
+      </a>
+      <a class="mobile-nav-item" href="#">
+        <span class="mobile-nav-number">02</span>
+        <span class="mobile-nav-label">Sobre</span>
+        <span class="material-symbols-outlined mobile-nav-arrow">arrow_forward</span>
+      </a>
+      <a class="mobile-nav-item" href="#">
+        <span class="mobile-nav-number">03</span>
+        <span class="mobile-nav-label">Cursos</span>
+        <span class="material-symbols-outlined mobile-nav-arrow">arrow_forward</span>
+      </a>
+      <a class="mobile-nav-item" href="#">
+        <span class="mobile-nav-number">04</span>
+        <span class="mobile-nav-label">Contato</span>
+        <span class="material-symbols-outlined mobile-nav-arrow">arrow_forward</span>
+      </a>
+    </nav>
+    <!-- Footer do menu -->
+    <div class="mobile-menu-footer">
+      <button class="btn btn-primary w-full">Agendar Consulta</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero reveal" style="overflow: hidden;">
+    <!-- Aurora glow -->
+    <div class="ambient-glow ambient-glow-hero"></div>
+    <div class="container grid md-grid-cols-2 gap-2xl hero-content items-center">
+      <!-- Left Content Area -->
+      <div class="flex flex-col items-start text-left">
+        <div class="hero-badge">
+          Cirurgião Buco-Maxilo-Facial & Professor
+        </div>
+        <h1 class="text-display-2xl text-white mb-lg max-w-[500px]">
+          Excelência em Cirurgia e Traumatologia Facial.
+        </h1>
+        <p class="text-body-lg text-zinc-400 mb-xl hero-text">
+          Unindo a mais avançada prática clínica baseada em evidências científicas com a paixão pela docência e formação
+          de novos profissionais.
+        </p>
+        <div class="flex gap-md w-full hero-ctas">
+          <button class="btn btn-primary flex items-center gap-sm">
+            Agendar Consulta
+            <span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span>
+          </button>
+          <button class="btn btn-outline flex items-center gap-sm">
+            Conhecer Metodologia
+          </button>
+        </div>
+        <!-- Trust Mini-Bar -->
+        <div class="hero-trust-bar">
+          <div class="hero-trust-item">
+            <span class="hero-trust-number">4.2k+</span>
+            <span class="hero-trust-label">Procedimentos</span>
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-number">85</span>
+            <span class="hero-trust-label">Publicações</span>
+          </div>
+          <div class="hero-trust-divider"></div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-number">12</span>
+            <span class="hero-trust-label">Países</span>
+          </div>
+        </div>
+      </div>
+      <!-- Right Visual Area -->
+      <div class="hero-image-container">
+        <div class="hero-image-outline"></div>
+        <div class="hero-image-gradient"></div>
+        <div class="hero-image-wrapper">
+          <img alt="Dr. Lucas - Cirurgião Buco-Maxilo-Facial" class="hero-image" src="/src/assets/foto-terno.png" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Specs / Specialty Grid -->
+  <section class="py-3xl container reveal">
+    <div class="flex justify-between items-end mb-16 border-b pb-8">
+      <div>
+        <h2 class="text-display-xl text-white uppercase tracking-tighter">Áreas de <span
+            class="text-gradient-primary">Atuação</span></h2>
+        <p class="text-zinc-500 text-body-md mt-2 uppercase tracking-widest">Protocolos Cirúrgicos Avançados</p>
+      </div>
+      <div class="md-block text-right" style="display: none;">
+        <span class="material-symbols-outlined text-primary" style="font-size: 48px;">biotech</span>
+      </div>
+    </div>
+
+    <div class="grid md-grid-cols-4 gap-0 border">
+      <!-- Spec Card 1 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-number">01 //</span>
+          <span class="material-symbols-outlined card-icon">skull</span>
+        </div>
+        <h3 class="text-headline-lg text-white mb-4 uppercase tracking-tight">Ortognática</h3>
+        <p class="text-zinc-400 text-body-md mb-8">Planejamento virtual 3D para correção de deformidades dentofaciais
+          com precisão milimétrica.</p>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Virtual Surgical Planning
+          </li>
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Custom Titanium Plates
+          </li>
+        </ul>
+      </div>
+
+      <!-- Spec Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-number">02 //</span>
+          <span class="material-symbols-outlined card-icon">dentistry</span>
+        </div>
+        <h3 class="text-headline-lg text-white mb-4 uppercase tracking-tight">Implantes</h3>
+        <p class="text-zinc-400 text-body-md mb-8">Reabilitação oral complexa utilizando guias cirúrgicos prototipados e
+          tecnologia de carga imediata.</p>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Guided Bone Regeneration
+          </li>
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Zygomatic Solutions
+          </li>
+        </ul>
+      </div>
+
+      <!-- Spec Card 3 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-number">03 //</span>
+          <span class="material-symbols-outlined card-icon">emergency</span>
+        </div>
+        <h3 class="text-headline-lg text-white mb-4 uppercase tracking-tight">Traumatologia</h3>
+        <p class="text-zinc-400 text-body-md mb-8">Tratamento especializado de fraturas faciais e reconstruções
+          pós-traumáticas de alta complexidade.</p>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Hard Tissue Reconstruction
+          </li>
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Microsurgery Ready
+          </li>
+        </ul>
+      </div>
+
+      <!-- Spec Card 4 -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-number">04 //</span>
+          <span class="material-symbols-outlined card-icon">science</span>
+        </div>
+        <h3 class="text-headline-lg text-white mb-4 uppercase tracking-tight">Pesquisa</h3>
+        <p class="text-zinc-400 text-body-md mb-8">Doutorando ativo com pesquisa em biomateriais avançados e publicações
+          em periódicos internacionais indexados.</p>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Evidence-Based Practice
+          </li>
+          <li class="card-list-item">
+            <div class="card-list-dot"></div> Peer-Reviewed Publications
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Mentorship Section -->
+  <section class="education-section container reveal">
+    <div class="education-title-wrapper">
+      <h2 class="text-display-xl text-white uppercase tracking-tighter inline-block">
+        EDUCAÇÃO <span class="text-gradient-primary">&amp;</span> MENTORIA
+      </h2>
+      <div class="education-title-decorator"></div>
+    </div>
+
+    <div class="education-grid">
+      <!-- Fellowship Big Card (Left) -->
+      <div class="edu-card-main group">
+        <div class="edu-card-main-image-wrapper">
+          <img alt="Fellowship em Ortognática" class="edu-card-main-image" src="/src/assets/foto-essenza.png" />
+          <div class="edu-card-main-gradient"></div>
+        </div>
+        <span class="edu-badge">VAGAS ABERTAS</span>
+        <div class="edu-card-main-content">
+          <h3 class="text-headline-lg text-white mb-md tracking-tighter uppercase">MENTORIA EM ORTOGNÁTICA</h3>
+          <p class="edu-card-main-text text-body-md">
+            Programa de imersão clínica e cirúrgica com acompanhamento direto em casos complexos e planejamento virtual
+            avançado.
+          </p>
+          <a href="#" class="edu-card-main-link">
+            VER PROGRAMA COMPLETO
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Secondary Cards Column (Right) -->
+      <div class="edu-card-sec-column">
+        <!-- Online Courses Card -->
+        <div class="edu-card-sec">
+          <span class="material-symbols-outlined edu-card-sec-icon"
+            style="font-variation-settings: 'FILL' 1;">play_circle</span>
+          <h3 class="edu-card-sec-title text-headline-lg tracking-tighter">CURSOS ONLINE</h3>
+          <p class="edu-card-sec-text text-body-md">
+            Protocolos cirúrgicos validados, do planejamento 3D à execução, disponíveis em uma plataforma exclusiva de
+            ensino.
+          </p>
+          <button class="edu-card-sec-button">
+            SAIBA MAIS
+          </button>
+        </div>
+
+        <!-- VIP Mentorship Card -->
+        <div class="edu-card-sec">
+          <span class="material-symbols-outlined edu-card-sec-icon"
+            style="font-variation-settings: 'FILL' 1;">groups</span>
+          <h3 class="edu-card-sec-title text-headline-lg tracking-tighter">MENTORIA VIP</h3>
+          <p class="edu-card-sec-text text-body-md">
+            Acompanhamento individualizado focado em técnica cirúrgica refinada e gestão estratégica de carreira
+            premium.
+          </p>
+          <button class="edu-card-sec-button">
+            SOLICITAR ACESSO
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evidence Based Bio Section -->
+  <section class="py-3xl bg-surface reveal" style="overflow: hidden; position: relative;">
+    <div class="ambient-glow ambient-glow-bio"></div>
+    <div class="container grid md-grid-cols-2 gap-2xl items-center" style="position: relative; z-index: 1;">
+      <div class="relative border" style="order: 2;">
+        <img alt="Academic Research" style="aspect-ratio: 4/5;" class="w-full object-cover"
+          src="/src/assets/foto-branca.png" />
+        <div class="absolute inset-0" style="background-color: rgba(248, 109, 83, 0.1); mix-blend-mode: overlay;"></div>
+      </div>
+      <div style="order: 1;">
+        <h2 class="text-display-xl text-white mb-8">A CIÊNCIA POR TRÁS DA <span
+            class="text-gradient-primary">ESTÉTICA</span>.</h2>
+        <p class="text-body-lg text-zinc-400 mb-6">
+          Dr. Lucas é Professor e Pesquisador, dedicando sua carreira ao desenvolvimento de técnicas que minimizam o
+          trauma cirúrgico e otimizam a simetria facial.
+        </p>
+        <div class="flex flex-col gap-6">
+          <div class="feature-row active">
+            <span class="material-symbols-outlined text-primary">school</span>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-tight">Doutorado em Cirurgia</h4>
+              <p class="text-zinc-500 text-label-sm mt-2">Foco em Biomateriais e Reconstrução Óssea.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <span class="material-symbols-outlined text-zinc-500">menu_book</span>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-tight">Professor Titular</h4>
+              <p class="text-zinc-500 text-label-sm mt-2">Formando a próxima geração de cirurgiões especialistas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section class="cta-section reveal">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-glow"></div>
+        <p class="cta-eyebrow">Pronto para o próximo nível?</p>
+        <h2 class="text-display-xl text-white tracking-tighter cta-title">
+          Agende sua <span class="text-gradient-primary">Consulta</span>.
+        </h2>
+        <p class="text-body-lg text-zinc-400 cta-subtitle">
+          Atendimento presencial em São Paulo. Teleconsulta disponível para todo o Brasil.
+        </p>
+        <div class="cta-actions">
+          <button class="btn btn-primary flex items-center gap-sm">
+            Agendar Agora
+            <span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span>
+          </button>
+          <a href="#" class="btn btn-outline">Ver Cursos Online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">DR. LUCAS</div>
+          <p class="footer-tagline">Cirurgião Buco-Maxilo-Facial.<br/>Doutorando &amp; Professor Universitário.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <span class="material-symbols-outlined" style="font-size: 20px;">photo_camera</span>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+              <span class="material-symbols-outlined" style="font-size: 20px;">work</span>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <span class="material-symbols-outlined" style="font-size: 20px;">play_circle</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Cirurgia Ortognática</a></li>
+            <li><a href="#" class="footer-link">Implantes Osseointegrados</a></li>
+            <li><a href="#" class="footer-link">Traumatologia Facial</a></li>
+            <li><a href="#" class="footer-link">Pesquisa Clínica</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Ensino</h4>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Mentoria em Ortognática</a></li>
+            <li><a href="#" class="footer-link">Cursos Online</a></li>
+            <li><a href="#" class="footer-link">Mentoria VIP</a></li>
+            <li><a href="#" class="footer-link">Congressos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contato</h4>
+          <ul class="footer-list">
+            <li class="footer-contact-item">
+              <span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-primary);">location_on</span>
+              São Paulo, SP — Brasil
+            </li>
+            <li class="footer-contact-item">
+              <span class="material-symbols-outlined" style="font-size: 16px; color: var(--color-primary);">mail</span>
+              contato@drlucas.com.br
+            </li>
+            <li><a href="#" class="btn btn-primary" style="margin-top: 1rem; font-size: 11px;">Agendar Consulta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">© 2025 Dr. Lucas — Cirurgia Bucomaxilofacial &amp; Educação. Todos os direitos reservados.</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Privacidade</a>
+          <a class="footer-link" href="#">Termos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

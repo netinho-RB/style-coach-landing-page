@@ -1,0 +1,279 @@
+{
+  "screenshot": {
+    "name": "projects/10425558725399922875/files/15450714691144441097",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhRmlbzb7maEfzaIS8F65Q_cwmbbNiRiJiKSbBq2zeeNirUz6rX9ZvXyhGxo4bPvP6IV-c-R_Ylz4EexJwEjl8SBC4xkqtv2HeBwqXFfFmLkaANmU0Xix4VpMAmRCP4EVgI5liWqbHNp4XwfGgioaR2Lw8F_iHHhviA80xmSt2YPrPaThDffZi5aLsy2srtswmKyPmanXK4oy1_WimjUL9XB1px3KYQLIRSxIpePeT9gRABjPkovG0E4i9Z"
+  },
+  "htmlCode": {
+    "name": "projects/10425558725399922875/files/15450714691144441146",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMDY1MDcyNGU4YzgzOGIwNTAzY2E3NWRkMmMyY2JkEgsSBxDB5ubZ0BQYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDQyNTU1ODcyNTM5OTkyMjg3NQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "15450714691144441048",
+  "generatedBy": "figaro_agent",
+  "width": "2560",
+  "height": "2426",
+  "title": "Hero Component - Vercel Style",
+  "prompt": "Developer task: Create the isolated Hero component for a personal brand landing page. \nTechnical Specs: \n- Framework: React + Tailwind CSS.\n- Background: #0A0A0A. \n- Typography: Inter/Geist, tracking-tighter (kerning), leading-tight (line-height).\n- Layout: Visual hierarchy with an impactful headline (Unlock the Leader Within), clear subheadline, and minimalist primary CTA button. \n- Image: High-quality professional portrait on the right (use {{DATA:IMAGE:IMAGE_4}} as reference for style). \n- Architecture: Encapsulated component with style constants for colors and spacing. No global CSS. \n- Vercel-style: Minimalist, clean, and premium feel. Focus on precise padding and line-height.",
+  "name": "projects/10425558725399922875/screens/15450714691144441048",
+  "theme": {
+    "colorMode": "DARK",
+    "font": "INTER",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#F86D53",
+    "headlineFont": "INTER",
+    "bodyFont": "INTER",
+    "labelFont": "INTER",
+    "namedColors": {
+      "secondary_fixed_dim": "#ffb4a5",
+      "tertiary_fixed": "#77f7e9",
+      "on_error": "#690005",
+      "on_primary": "#650a00",
+      "surface_container_high": "#282a2b",
+      "on_tertiary_fixed": "#00201d",
+      "on_background": "#e2e2e2",
+      "on_tertiary_container": "#003833",
+      "primary_fixed": "#ffdad3",
+      "surface_dim": "#121414",
+      "on_error_container": "#ffdad6",
+      "on_secondary_fixed_variant": "#70362b",
+      "primary_container": "#f86d53",
+      "surface_variant": "#333535",
+      "on_primary_fixed_variant": "#891d0b",
+      "surface_container_low": "#1a1c1c",
+      "inverse_surface": "#e2e2e2",
+      "background": "#121414",
+      "tertiary_fixed_dim": "#57dacd",
+      "surface_container": "#1e2020",
+      "surface_container_highest": "#333535",
+      "on_surface": "#e2e2e2",
+      "on_tertiary_fixed_variant": "#00504a",
+      "surface": "#121414",
+      "surface_container_lowest": "#0c0f0f",
+      "primary": "#ffb4a5",
+      "tertiary": "#57dacd",
+      "on_primary_fixed": "#3f0400",
+      "inverse_on_surface": "#2f3131",
+      "inverse_primary": "#aa3520",
+      "secondary": "#ffb4a5",
+      "error_container": "#93000a",
+      "surface_bright": "#38393a",
+      "on_secondary": "#542017",
+      "on_tertiary": "#003733",
+      "secondary_container": "#70362b",
+      "error": "#ffb4ab",
+      "secondary_fixed": "#ffdad3",
+      "on_surface_variant": "#e0bfb9",
+      "outline_variant": "#58413d",
+      "tertiary_container": "#00ab9f",
+      "surface_tint": "#ffb4a5",
+      "primary_fixed_dim": "#ffb4a5",
+      "outline": "#a78a85",
+      "on_secondary_container": "#f1a191",
+      "on_primary_container": "#660a00",
+      "on_secondary_fixed": "#380c05"
+    },
+    "designMd": "---\nname: Elite Precision\ncolors:\n  surface: '#121414'\n  surface-dim: '#121414'\n  surface-bright: '#38393a'\n  surface-container-lowest: '#0c0f0f'\n  surface-container-low: '#1a1c1c'\n  surface-container: '#1e2020'\n  surface-container-high: '#282a2b'\n  surface-container-highest: '#333535'\n  on-surface: '#e2e2e2'\n  on-surface-variant: '#e0bfb9'\n  inverse-surface: '#e2e2e2'\n  inverse-on-surface: '#2f3131'\n  outline: '#a78a85'\n  outline-variant: '#58413d'\n  surface-tint: '#ffb4a5'\n  primary: '#ffb4a5'\n  on-primary: '#650a00'\n  primary-container: '#f86d53'\n  on-primary-container: '#660a00'\n  inverse-primary: '#aa3520'\n  secondary: '#ffb4a5'\n  on-secondary: '#542017'\n  secondary-container: '#70362b'\n  on-secondary-container: '#f1a191'\n  tertiary: '#57dacd'\n  on-tertiary: '#003733'\n  tertiary-container: '#00ab9f'\n  on-tertiary-container: '#003833'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad3'\n  primary-fixed-dim: '#ffb4a5'\n  on-primary-fixed: '#3f0400'\n  on-primary-fixed-variant: '#891d0b'\n  secondary-fixed: '#ffdad3'\n  secondary-fixed-dim: '#ffb4a5'\n  on-secondary-fixed: '#380c05'\n  on-secondary-fixed-variant: '#70362b'\n  tertiary-fixed: '#77f7e9'\n  tertiary-fixed-dim: '#57dacd'\n  on-tertiary-fixed: '#00201d'\n  on-tertiary-fixed-variant: '#00504a'\n  background: '#121414'\n  on-background: '#e2e2e2'\n  surface-variant: '#333535'\ntypography:\n  display-2xl:\n    fontFamily: Inter\n    fontSize: 72px\n    fontWeight: '600'\n    lineHeight: '1.1'\n    letterSpacing: -0.04em\n  display-xl:\n    fontFamily: Inter\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: -0.03em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '500'\n    lineHeight: '1.3'\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '500'\n    lineHeight: '1.4'\n    letterSpacing: -0.02em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n    letterSpacing: -0.01em\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n    letterSpacing: -0.01em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: '1'\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 40px\n  2xl: 64px\n  3xl: 104px\n---\n\n## Brand & Style\n\nThis design system centers on the intersection of technical precision and executive luxury. Targeted at high-performance founders and executives, the aesthetic mirrors the Vercel-inspired \"developer-centric\" minimalismÔÇöstripping away visual noise to focus on clarity and high-impact messaging. \n\nThe style is **Minimalist with High-Contrast Typography**. It utilizes expansive whitespace (negative space) as a structural element rather than a void. Visual authority is established through razor-sharp alignment, a strict dark palette, and a singular, vibrant accent color that guides the eye to conversion points. The emotional response is one of calm, disciplined power.\n\n## Colors\n\nThe palette is strictly curated to maintain a high-end, dark-mode-first experience. \n\n- **Background:** A deep, obsidian black (#0A0A0A) serves as the foundation to minimize eye strain and maximize the \"pop\" of white text and the primary accent.\n- **Primary Accent:** #F86D53 (Sunset Coral) is used sparingly for calls to action, active states, and critical highlights.\n- **Neutrals:** Text utilizes a high-contrast off-white (#EDEDED) for readability, while borders and dividers use a subtle charcoal (#2E2E2E) to define structure without adding visual weight.\n- **Surface:** Secondary containers use a slightly elevated gray (#171717) to create subtle depth.\n\n## Typography\n\nThe typography is the core of this design system. We utilize **Inter** (with a preference for the \"Geist\" style of tight tracking) to achieve a sophisticated, modern look.\n\n- **Precision Kerning:** For headlines (Display and Headline tiers), negative letter-spacing is required to create a \"dense\" and authoritative feel.\n- **Generous Line-Height:** Body text uses a 1.6x multiplier to ensure maximum legibility and an editorial feel amidst large whitespace.\n- **Labeling:** Small labels should use uppercase with increased tracking to differentiate from interactive text.\n\n## Layout & Spacing\n\nThis design system employs a **Fixed Grid** model within a maximum container width of 1200px for desktop, ensuring content remains centered and digestible.\n\n- **The 4px Scale:** All padding, margins, and component heights must be multiples of 4px.\n- **Whitespace Rhythm:** Section vertical spacing should be aggressive (typically `3xl` or 104px) to emphasize the premium nature of the content.\n- **Alignment:** Strict left-alignment is preferred for all content blocks to maintain a \"journalistic\" and structured flow.\n\n## Elevation & Depth\n\nTo maintain the Vercel-style aesthetic, this design system avoids traditional shadows in favor of **Tonal Layers** and **Low-Contrast Outlines**.\n\n- **Surface Tiers:** The base background is #0A0A0A. Raised elements (cards, modals) use #171717.\n- **Borders:** Define shapes using 1px solid borders (#2E2E2E). This creates a \"blueprint\" feel that is clean and technical.\n- **Hover States:** Instead of raising an element with a shadow, hover states should be indicated by a subtle border color shift (to #444) or a slight lightening of the background surface.\n\n## Shapes\n\nThe shape language is \"Soft\" yet disciplined. While the overall vibe is architectural and sharp, subtle rounding prevents the UI from feeling aggressive.\n\n- **Base Radius:** 4px (0.25rem) for buttons and inputs.\n- **Container Radius:** 8px (0.5rem) for cards and larger modules.\n- **Interactive Elements:** Use sharp 90-degree corners for outer layout wrappers, while internal components use the defined rounding scale to create a \"nested\" professional feel.\n\n## Components\n\n### Buttons\n- **Primary:** Background #F86D53, text #0A0A0A (Black), bold weight. No border.\n- **Secondary:** Background transparent, 1px border #2E2E2E, text #EDEDED.\n- **States:** On hover, primary buttons should slightly increase in opacity. Secondary buttons should change border color to #EDEDED.\n\n### Input Fields\n- **Style:** Background #0A0A0A, 1px border #2E2E2E.\n- **Focus:** Border transitions to #F86D53. Placeholder text in #666.\n\n### Cards\n- **Construction:** Background #111111 (slightly lighter than base), 1px border #2E2E2E, 24px padding.\n- **Usage:** Used to group testimonials, coaching modules, or pricing tiers.\n\n### Additional Components\n- **Stats Display:** Large Display-XL typography for numbers with a Label-SM uppercase tag underneath.\n- **Process List:** A vertical line (1px, #2E2E2E) connecting bullet points to signify a step-by-step executive methodology.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#F86D53",
+    "overrideNeutralColor": "#ededed",
+    "spacingScale": 2,
+    "typography": {
+      "headline-md": {
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "lineHeight": "1.4",
+        "letterSpacing": "-0.02em"
+      },
+      "label-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "1",
+        "letterSpacing": "0.05em"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "1.6",
+        "letterSpacing": "-0.01em"
+      },
+      "display-xl": {
+        "fontFamily": "Inter",
+        "fontSize": "48px",
+        "fontWeight": "600",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.03em"
+      },
+      "headline-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "32px",
+        "fontWeight": "500",
+        "lineHeight": "1.3",
+        "letterSpacing": "-0.02em"
+      },
+      "display-2xl": {
+        "fontFamily": "Inter",
+        "fontSize": "72px",
+        "fontWeight": "600",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.04em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.6",
+        "letterSpacing": "-0.01em"
+      }
+    },
+    "spacing": {
+      "md": "16px",
+      "xs": "4px",
+      "sm": "8px",
+      "xl": "40px",
+      "2xl": "64px",
+      "lg": "24px",
+      "3xl": "104px"
+    }
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "isCreatedByClient": true,
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/c04ca8b9b87240f88d5482c520975df6",
+    "designSystem": {
+      "displayName": "Elite Precision",
+      "styleGuidelines": "## Brand & Style\n\nThis design system centers on the intersection of technical precision and executive luxury. Targeted at high-performance founders and executives, the aesthetic mirrors the Vercel-inspired \"developer-centric\" minimalismÔÇöstripping away visual noise to focus on clarity and high-impact messaging. \n\nThe style is **Minimalist with High-Contrast Typography**. It utilizes expansive whitespace (negative space) as a structural element rather than a void. Visual authority is established through razor-sharp alignment, a strict dark palette, and a singular, vibrant accent color that guides the eye to conversion points. The emotional response is one of calm, disciplined power.\n\n## Layout & Spacing\n\nThis design system employs a **Fixed Grid** model within a maximum container width of 1200px for desktop, ensuring content remains centered and digestible.\n\n- **The 4px Scale:** All padding, margins, and component heights must be multiples of 4px.\n- **Whitespace Rhythm:** Section vertical spacing should be aggressive (typically `3xl` or 104px) to emphasize the premium nature of the content.\n- **Alignment:** Strict left-alignment is preferred for all content blocks to maintain a \"journalistic\" and structured flow.\n\n## Elevation & Depth\n\nTo maintain the Vercel-style aesthetic, this design system avoids traditional shadows in favor of **Tonal Layers** and **Low-Contrast Outlines**.\n\n- **Surface Tiers:** The base background is #0A0A0A. Raised elements (cards, modals) use #171717.\n- **Borders:** Define shapes using 1px solid borders (#2E2E2E). This creates a \"blueprint\" feel that is clean and technical.\n- **Hover States:** Instead of raising an element with a shadow, hover states should be indicated by a subtle border color shift (to #444) or a slight lightening of the background surface.\n\n## Components\n\n### Buttons\n- **Primary:** Background #F86D53, text #0A0A0A (Black), bold weight. No border.\n- **Secondary:** Background transparent, 1px border #2E2E2E, text #EDEDED.\n- **States:** On hover, primary buttons should slightly increase in opacity. Secondary buttons should change border color to #EDEDED.\n\n### Input Fields\n- **Style:** Background #0A0A0A, 1px border #2E2E2E.\n- **Focus:** Border transitions to #F86D53. Placeholder text in #666.\n\n### Cards\n- **Construction:** Background #111111 (slightly lighter than base), 1px border #2E2E2E, 24px padding.\n- **Usage:** Used to group testimonials, coaching modules, or pricing tiers.\n\n### Additional Components\n- **Stats Display:** Large Display-XL typography for numbers with a Label-SM uppercase tag underneath.\n- **Process List:** A vertical line (1px, #2E2E2E) connecting bullet points to signify a step-by-step executive methodology.",
+      "theme": {
+        "colorMode": "DARK",
+        "font": "INTER",
+        "roundness": "ROUND_FOUR",
+        "customColor": "#F86D53",
+        "headlineFont": "INTER",
+        "bodyFont": "INTER",
+        "labelFont": "INTER",
+        "namedColors": {
+          "inverse_surface": "#e2e2e2",
+          "surface_container_low": "#1a1c1c",
+          "on_primary_fixed_variant": "#891d0b",
+          "on_surface": "#e2e2e2",
+          "surface_container_highest": "#333535",
+          "surface_container": "#1e2020",
+          "tertiary_fixed_dim": "#57dacd",
+          "background": "#121414",
+          "on_tertiary_fixed": "#00201d",
+          "surface_container_high": "#282a2b",
+          "on_primary": "#650a00",
+          "on_error": "#690005",
+          "tertiary_fixed": "#77f7e9",
+          "secondary_fixed_dim": "#ffb4a5",
+          "surface_variant": "#333535",
+          "primary_container": "#f86d53",
+          "on_secondary_fixed_variant": "#70362b",
+          "on_error_container": "#ffdad6",
+          "surface_dim": "#121414",
+          "primary_fixed": "#ffdad3",
+          "on_tertiary_container": "#003833",
+          "on_background": "#e2e2e2",
+          "on_primary_container": "#660a00",
+          "on_secondary_container": "#f1a191",
+          "outline": "#a78a85",
+          "primary_fixed_dim": "#ffb4a5",
+          "surface_tint": "#ffb4a5",
+          "tertiary_container": "#00ab9f",
+          "outline_variant": "#58413d",
+          "on_surface_variant": "#e0bfb9",
+          "secondary_fixed": "#ffdad3",
+          "error": "#ffb4ab",
+          "secondary_container": "#70362b",
+          "on_secondary_fixed": "#380c05",
+          "on_primary_fixed": "#3f0400",
+          "tertiary": "#57dacd",
+          "primary": "#ffb4a5",
+          "surface_container_lowest": "#0c0f0f",
+          "on_tertiary_fixed_variant": "#00504a",
+          "surface": "#121414",
+          "on_tertiary": "#003733",
+          "on_secondary": "#542017",
+          "surface_bright": "#38393a",
+          "error_container": "#93000a",
+          "secondary": "#ffb4a5",
+          "inverse_primary": "#aa3520",
+          "inverse_on_surface": "#2f3131"
+        },
+        "designMd": "---\nname: Elite Precision\ncolors:\n  surface: '#121414'\n  surface-dim: '#121414'\n  surface-bright: '#38393a'\n  surface-container-lowest: '#0c0f0f'\n  surface-container-low: '#1a1c1c'\n  surface-container: '#1e2020'\n  surface-container-high: '#282a2b'\n  surface-container-highest: '#333535'\n  on-surface: '#e2e2e2'\n  on-surface-variant: '#e0bfb9'\n  inverse-surface: '#e2e2e2'\n  inverse-on-surface: '#2f3131'\n  outline: '#a78a85'\n  outline-variant: '#58413d'\n  surface-tint: '#ffb4a5'\n  primary: '#ffb4a5'\n  on-primary: '#650a00'\n  primary-container: '#f86d53'\n  on-primary-container: '#660a00'\n  inverse-primary: '#aa3520'\n  secondary: '#ffb4a5'\n  on-secondary: '#542017'\n  secondary-container: '#70362b'\n  on-secondary-container: '#f1a191'\n  tertiary: '#57dacd'\n  on-tertiary: '#003733'\n  tertiary-container: '#00ab9f'\n  on-tertiary-container: '#003833'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad3'\n  primary-fixed-dim: '#ffb4a5'\n  on-primary-fixed: '#3f0400'\n  on-primary-fixed-variant: '#891d0b'\n  secondary-fixed: '#ffdad3'\n  secondary-fixed-dim: '#ffb4a5'\n  on-secondary-fixed: '#380c05'\n  on-secondary-fixed-variant: '#70362b'\n  tertiary-fixed: '#77f7e9'\n  tertiary-fixed-dim: '#57dacd'\n  on-tertiary-fixed: '#00201d'\n  on-tertiary-fixed-variant: '#00504a'\n  background: '#121414'\n  on-background: '#e2e2e2'\n  surface-variant: '#333535'\ntypography:\n  display-2xl:\n    fontFamily: Inter\n    fontSize: 72px\n    fontWeight: '600'\n    lineHeight: '1.1'\n    letterSpacing: -0.04em\n  display-xl:\n    fontFamily: Inter\n    fontSize: 48px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: -0.03em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '500'\n    lineHeight: '1.3'\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '500'\n    lineHeight: '1.4'\n    letterSpacing: -0.02em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n    letterSpacing: -0.01em\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n    letterSpacing: -0.01em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: '1'\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 40px\n  2xl: 64px\n  3xl: 104px\n---\n\n## Brand & Style\n\nThis design system centers on the intersection of technical precision and executive luxury. Targeted at high-performance founders and executives, the aesthetic mirrors the Vercel-inspired \"developer-centric\" minimalismÔÇöstripping away visual noise to focus on clarity and high-impact messaging. \n\nThe style is **Minimalist with High-Contrast Typography**. It utilizes expansive whitespace (negative space) as a structural element rather than a void. Visual authority is established through razor-sharp alignment, a strict dark palette, and a singular, vibrant accent color that guides the eye to conversion points. The emotional response is one of calm, disciplined power.\n\n## Colors\n\nThe palette is strictly curated to maintain a high-end, dark-mode-first experience. \n\n- **Background:** A deep, obsidian black (#0A0A0A) serves as the foundation to minimize eye strain and maximize the \"pop\" of white text and the primary accent.\n- **Primary Accent:** #F86D53 (Sunset Coral) is used sparingly for calls to action, active states, and critical highlights.\n- **Neutrals:** Text utilizes a high-contrast off-white (#EDEDED) for readability, while borders and dividers use a subtle charcoal (#2E2E2E) to define structure without adding visual weight.\n- **Surface:** Secondary containers use a slightly elevated gray (#171717) to create subtle depth.\n\n## Typography\n\nThe typography is the core of this design system. We utilize **Inter** (with a preference for the \"Geist\" style of tight tracking) to achieve a sophisticated, modern look.\n\n- **Precision Kerning:** For headlines (Display and Headline tiers), negative letter-spacing is required to create a \"dense\" and authoritative feel.\n- **Generous Line-Height:** Body text uses a 1.6x multiplier to ensure maximum legibility and an editorial feel amidst large whitespace.\n- **Labeling:** Small labels should use uppercase with increased tracking to differentiate from interactive text.\n\n## Layout & Spacing\n\nThis design system employs a **Fixed Grid** model within a maximum container width of 1200px for desktop, ensuring content remains centered and digestible.\n\n- **The 4px Scale:** All padding, margins, and component heights must be multiples of 4px.\n- **Whitespace Rhythm:** Section vertical spacing should be aggressive (typically `3xl` or 104px) to emphasize the premium nature of the content.\n- **Alignment:** Strict left-alignment is preferred for all content blocks to maintain a \"journalistic\" and structured flow.\n\n## Elevation & Depth\n\nTo maintain the Vercel-style aesthetic, this design system avoids traditional shadows in favor of **Tonal Layers** and **Low-Contrast Outlines**.\n\n- **Surface Tiers:** The base background is #0A0A0A. Raised elements (cards, modals) use #171717.\n- **Borders:** Define shapes using 1px solid borders (#2E2E2E). This creates a \"blueprint\" feel that is clean and technical.\n- **Hover States:** Instead of raising an element with a shadow, hover states should be indicated by a subtle border color shift (to #444) or a slight lightening of the background surface.\n\n## Shapes\n\nThe shape language is \"Soft\" yet disciplined. While the overall vibe is architectural and sharp, subtle rounding prevents the UI from feeling aggressive.\n\n- **Base Radius:** 4px (0.25rem) for buttons and inputs.\n- **Container Radius:** 8px (0.5rem) for cards and larger modules.\n- **Interactive Elements:** Use sharp 90-degree corners for outer layout wrappers, while internal components use the defined rounding scale to create a \"nested\" professional feel.\n\n## Components\n\n### Buttons\n- **Primary:** Background #F86D53, text #0A0A0A (Black), bold weight. No border.\n- **Secondary:** Background transparent, 1px border #2E2E2E, text #EDEDED.\n- **States:** On hover, primary buttons should slightly increase in opacity. Secondary buttons should change border color to #EDEDED.\n\n### Input Fields\n- **Style:** Background #0A0A0A, 1px border #2E2E2E.\n- **Focus:** Border transitions to #F86D53. Placeholder text in #666.\n\n### Cards\n- **Construction:** Background #111111 (slightly lighter than base), 1px border #2E2E2E, 24px padding.\n- **Usage:** Used to group testimonials, coaching modules, or pricing tiers.\n\n### Additional Components\n- **Stats Display:** Large Display-XL typography for numbers with a Label-SM uppercase tag underneath.\n- **Process List:** A vertical line (1px, #2E2E2E) connecting bullet points to signify a step-by-step executive methodology.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#F86D53",
+        "overrideNeutralColor": "#ededed",
+        "spacingScale": 2,
+        "typography": {
+          "display-2xl": {
+            "fontFamily": "Inter",
+            "fontSize": "72px",
+            "fontWeight": "600",
+            "lineHeight": "1.1",
+            "letterSpacing": "-0.04em"
+          },
+          "body-md": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6",
+            "letterSpacing": "-0.01em"
+          },
+          "headline-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "32px",
+            "fontWeight": "500",
+            "lineHeight": "1.3",
+            "letterSpacing": "-0.02em"
+          },
+          "body-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "1.6",
+            "letterSpacing": "-0.01em"
+          },
+          "display-xl": {
+            "fontFamily": "Inter",
+            "fontSize": "48px",
+            "fontWeight": "600",
+            "lineHeight": "1.2",
+            "letterSpacing": "-0.03em"
+          },
+          "headline-md": {
+            "fontFamily": "Inter",
+            "fontSize": "24px",
+            "fontWeight": "500",
+            "lineHeight": "1.4",
+            "letterSpacing": "-0.02em"
+          },
+          "label-sm": {
+            "fontFamily": "Inter",
+            "fontSize": "13px",
+            "fontWeight": "500",
+            "lineHeight": "1",
+            "letterSpacing": "0.05em"
+          }
+        },
+        "spacing": {
+          "md": "16px",
+          "xs": "4px",
+          "sm": "8px",
+          "2xl": "64px",
+          "3xl": "104px",
+          "lg": "24px",
+          "xl": "40px"
+        }
+      }
+    },
+    "version": "1"
+  }
+}

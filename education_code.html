@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #0A0A0A;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed-variant": "#00504a",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-container": "#00a89c",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary-container": "#003833",
+                        "surface": "#131313",
+                        "tertiary": "#57dacd",
+                        "on-primary-container": "#660a00",
+                        "on-tertiary-fixed": "#00201d",
+                        "primary-fixed-dim": "#ffb4a5",
+                        "tertiary-fixed": "#77f7e9",
+                        "surface-variant": "#353534",
+                        "secondary": "#57dacd",
+                        "on-primary": "#650a00",
+                        "on-secondary": "#003733",
+                        "outline-variant": "#58413d",
+                        "primary": "#ffb4a5",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "on-surface": "#e5e2e1",
+                        "on-secondary-container": "#003531",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#00ab9f",
+                        "surface-dim": "#131313",
+                        "secondary-fixed-dim": "#57dacd",
+                        "outline": "#a78a85",
+                        "on-surface-variant": "#e0bfb9",
+                        "surface-tint": "#ffb4a5",
+                        "on-secondary-fixed-variant": "#00504a",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e5e2e1",
+                        "inverse-primary": "#aa3520",
+                        "on-tertiary": "#003733",
+                        "tertiary-fixed-dim": "#57dacd",
+                        "primary-fixed": "#ffdad3",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed-variant": "#891d0b",
+                        "on-primary-fixed": "#3f0400",
+                        "background": "#131313",
+                        "on-error": "#690005",
+                        "primary-container": "#f86d53",
+                        "secondary-fixed": "#77f7e9",
+                        "inverse-on-surface": "#313030",
+                        "inverse-surface": "#e5e2e1",
+                        "on-secondary-fixed": "#00201d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "2xl": "64px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "3xl": "104px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "display-2xl": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "display-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                        "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutral-950 text-on-surface">
+<!-- Top Navigation Anchor -->
+<header class="bg-neutral-950/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-neutral-900">
+<div class="flex justify-between items-center h-16 px-6 max-w-[1200px] mx-auto font-inter antialiased tracking-tight">
+<span class="text-xl font-bold tracking-tighter text-white">Dr. Lucas</span>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-white transition-colors duration-200" href="#">Início</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-200" href="#">Cirurgias</a>
+<a class="text-white font-medium border-b-2 border-[#F86D53] pb-1" href="#">Educação</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-200" href="#">Mentoria</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-200" href="#">Contato</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-md py-sm font-bold active:scale-95 transition-all duration-200 hover:opacity-90">
+                Agendar Consulta
+            </button>
+</div>
+</header>
+<main class="pt-3xl">
+<!-- Education & Mentorship Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-3xl">
+<div class="text-center mb-2xl">
+<h2 class="font-display-xl text-display-xl tracking-tighter uppercase text-white inline-block">
+                    EDUCAÇÃO <span class="text-primary-container">&amp;</span> MENTORIA
+                </h2>
+<div class="h-1 w-24 bg-primary-container mx-auto mt-md"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+<!-- Fellowship Big Card (Left) -->
+<div class="group relative overflow-hidden bg-neutral-900 border border-neutral-800 rounded-lg flex flex-col h-full">
+<div class="aspect-[4/5] md:aspect-auto md:h-[500px] overflow-hidden">
+<img alt="Fellowship em Ortognática" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0" data-alt="Cinematic black and white close-up of a professional surgeon focused during a procedure, dramatic lighting, high contrast, premium medical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqC1nvkAzFHYDFWSRMEDGONhknOKxCuDa0O-biHZ5SEUeQP5tKl5EAI6MFRK7gIbYix4la24cN9VPfqDizuJno9qd1l5HPUG9XhcAdqt4ArKLb0m-QzlNCIDOLhvaHKm9BXy2VWbrhaFY8dlDiVAXuh2mleO6luq57hYo1WhkWu6VC-PQ4AXGF2_dQKMZo0aaUyEeP8dYci3ElLnSwBNiBYCMfnAUN3OZwivziNaeTCo82gvqnhNwLf2zRMJTYos2VcYwYhToyJnSO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent"></div>
+</div>
+<div class="absolute top-lg left-lg">
+<span class="inline-block px-md py-xs bg-primary-container/10 border border-primary-container/30 text-primary-container text-label-sm font-label-sm rounded-full tracking-widest">
+                            VAGAS ABERTAS
+                        </span>
+</div>
+<div class="absolute bottom-0 left-0 p-xl w-full">
+<h3 class="text-headline-lg font-headline-lg text-white mb-md tracking-tighter">FELLOWSHIP EM ORTOGNÁTICA</h3>
+<p class="text-body-md font-body-md text-neutral-400 mb-lg max-w-md">
+                            Programa de imersão clínica e cirúrgica com acompanhamento direto em casos complexos e planejamento virtual avançado.
+                        </p>
+<button class="flex items-center gap-sm text-white font-bold group-hover:text-primary-container transition-colors tracking-tight">
+                            VER PROGRAMA COMPLETO
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Secondary Cards Column (Right) -->
+<div class="flex flex-col gap-lg h-full">
+<!-- Online Courses Card -->
+<div class="flex-1 bg-neutral-950 border border-neutral-900 hover:border-neutral-800 p-xl flex flex-col transition-all duration-300">
+<div class="mb-lg">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-weight="fill">play_circle</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-md tracking-tighter">CURSOS ONLINE</h3>
+<p class="text-body-md font-body-md text-neutral-400 mb-xl flex-grow">
+                            Protocolos cirúrgicos validados, do planejamento 3D à execução, disponíveis em uma plataforma exclusiva de ensino.
+                        </p>
+<button class="border border-[#58413D] hover:border-on-surface text-white px-lg py-md font-bold transition-all duration-200 w-fit active:scale-95">
+                            SAIBA MAIS
+                        </button>
+</div>
+<!-- VIP Mentorship Card -->
+<div class="flex-1 bg-neutral-950 border border-neutral-900 hover:border-neutral-800 p-xl flex flex-col transition-all duration-300">
+<div class="mb-lg">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-weight="fill">groups</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-md tracking-tighter">MENTORIA VIP</h3>
+<p class="text-body-md font-body-md text-neutral-400 mb-xl flex-grow">
+                            Acompanhamento individualizado focado em técnica cirúrgica refinada e gestão estratégica de carreira premium.
+                        </p>
+<button class="border border-[#58413D] hover:border-on-surface text-white px-lg py-md font-bold transition-all duration-200 w-fit active:scale-95">
+                            SOLICITAR ACESSO
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 border-t border-neutral-900">
+<div class="max-w-[1200px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8 font-inter text-xs uppercase tracking-widest">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-black text-white">Dr. Lucas</span>
+<p class="text-neutral-500 normal-case tracking-normal">© 2024 Dr. Lucas - Cirurgia Buco-Maxilo-Facial. Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-neutral-500 hover:text-[#F86D53] transition-colors cursor-pointer" href="#">Privacidade</a>
+<a class="text-neutral-500 hover:text-[#F86D53] transition-colors cursor-pointer" href="#">Termos</a>
+<a class="text-neutral-500 hover:text-[#F86D53] transition-colors cursor-pointer" href="#">Cookies</a>
+<a class="text-neutral-500 hover:text-[#F86D53] transition-colors cursor-pointer" href="#">Suporte</a>
+</div>
+</div>
+</footer>
+</body></html>

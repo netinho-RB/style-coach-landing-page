@@ -1,0 +1,194 @@
+.education-section {
+  padding-top: var(--spacing-3xl);
+  padding-bottom: var(--spacing-3xl);
+}
+
+.education-title-wrapper {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.education-title-decorator {
+  height: 4px;
+  width: 6rem;
+  background-color: var(--color-primary-container);
+  margin: var(--spacing-md) auto 0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 1024px) {
+  .education-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.edu-card-main {
+  position: relative;
+  overflow: hidden;
+  background-color: #111;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  transition: border-color 0.4s ease;
+}
+
+.edu-card-main:hover {
+  border-color: rgba(248, 109, 83, 0.25);
+}
+
+@media (min-width: 1024px) {
+  .edu-card-main {
+    min-height: 500px;
+  }
+}
+
+.edu-card-main-image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.edu-card-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.edu-card-main:hover .edu-card-main-image {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.edu-card-main-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0A0A0A 0%, rgba(10, 10, 10, 0.5) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.edu-badge {
+  position: absolute;
+  top: var(--spacing-lg);
+  left: var(--spacing-lg);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: rgba(248, 109, 83, 0.1);
+  border: 1px solid rgba(248, 109, 83, 0.3);
+  color: var(--color-primary-container);
+  font-family: var(--font-label-sm);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.edu-card-main-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: var(--spacing-xl);
+  width: 100%;
+  z-index: 10;
+}
+
+.edu-card-main-title {
+  color: var(--color-on-background);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.edu-card-main-text {
+  color: #A1A1AA; /* zinc-400 */
+  margin-bottom: var(--spacing-lg);
+  max-width: 28rem;
+}
+
+.edu-card-main-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-on-background);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.edu-card-main:hover .edu-card-main-link {
+  color: var(--color-primary-container);
+}
+
+.edu-card-sec-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  height: 100%;
+}
+
+.edu-card-sec {
+  flex: 1;
+  background-color: var(--color-surface);
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  border-radius: var(--radius-lg);
+}
+
+.edu-card-sec:hover {
+  border-color: rgba(248, 109, 83, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.edu-card-sec-icon {
+  color: var(--color-primary-container);
+  font-size: 36px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.edu-card-sec-title {
+  color: var(--color-on-background);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.edu-card-sec-text {
+  color: #A1A1AA;
+  margin-bottom: var(--spacing-xl);
+  flex-grow: 1;
+}
+
+.edu-card-sec-button {
+  border: 1px solid var(--color-outline-variant);
+  background: transparent;
+  color: var(--color-on-background);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-weight: 700;
+  transition: border-color 0.2s ease, transform 0.1s ease;
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+.edu-card-sec-button:hover {
+  border-color: var(--color-on-background);
+}
+
+.edu-card-sec-button:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,154 @@
+.card {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: background-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--color-surface);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 1px rgba(248, 109, 83, 0.15);
+}
+
+@media (max-width: 767px) {
+  .card {
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    border-bottom: none;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .card:last-child {
+    border-right: none;
+  }
+}
+
+/* 4-col grid: 1-col mobile → 2-col tablet → 4-col desktop */
+.md-grid-cols-4 { grid-template-columns: 1fr; }
+
+@media (min-width: 600px) {
+  .md-grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .md-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.card-number {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.card-icon {
+  color: var(--color-zinc-600);
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-icon {
+  color: var(--color-white);
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-zinc-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--font-size-footer-tiny);
+  margin-bottom: 0.5rem;
+}
+
+.card-list-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+}
+
+/* Feature Row card */
+.feature-row {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-left: 2px solid rgba(255,255,255,0.07);
+  background-color: var(--color-background);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.feature-row:hover {
+  border-left-color: var(--color-primary);
+  background-color: rgba(248, 109, 83, 0.03);
+}
+
+.feature-row.active {
+  border-left-color: var(--color-primary);
+  background-color: rgba(248, 109, 83, 0.04);
+}
+
+/* Bento Card */
+.bento-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: transform 0.7s ease;
+}
+
+.bento-card:hover .bento-card-bg {
+  transform: scale(1.05);
+}
+
+.bento-tag {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.bento-small {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+  border: 1px solid var(--color-outline);
+}
+
+.bento-small:hover {
+  border-color: var(--color-primary);
+}

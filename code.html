@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        .grid-bg {
+            background-image: radial-gradient(#2E2E2E 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#0A0A0A",
+                      "primary-fixed-dim": "#ffb4a5",
+                      "primary-fixed": "#ffdad3",
+                      "tertiary-fixed-dim": "#57dacd",
+                      "on-secondary-fixed-variant": "#00504a",
+                      "on-tertiary-container": "#003833",
+                      "surface-dim": "#131313",
+                      "on-secondary-container": "#003531",
+                      "inverse-primary": "#aa3520",
+                      "error": "#ffb4ab",
+                      "surface-variant": "#353534",
+                      "on-tertiary-fixed-variant": "#00504a",
+                      "tertiary-fixed": "#77f7e9",
+                      "on-primary-fixed": "#3f0400",
+                      "on-surface-variant": "#e0bfb9",
+                      "inverse-on-surface": "#313030",
+                      "on-primary": "#650a00",
+                      "surface-container-low": "#1c1b1b",
+                      "on-tertiary-fixed": "#00201d",
+                      "surface-container-highest": "#353534",
+                      "on-error": "#690005",
+                      "primary-container": "#f86d53",
+                      "secondary-container": "#00a89c",
+                      "outline-variant": "#58413d",
+                      "on-tertiary": "#003733",
+                      "primary": "#ffb4a5",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-tint": "#ffb4a5",
+                      "secondary-fixed-dim": "#57dacd",
+                      "secondary-fixed": "#77f7e9",
+                      "on-primary-container": "#660a00",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-high": "#2a2a2a",
+                      "outline": "#a78a85",
+                      "inverse-surface": "#e5e2e1",
+                      "surface": "#131313",
+                      "surface-bright": "#3a3939",
+                      "surface-container": "#201f1f",
+                      "on-primary-fixed-variant": "#891d0b",
+                      "tertiary": "#57dacd",
+                      "on-surface": "#e5e2e1",
+                      "error-container": "#93000a",
+                      "on-secondary": "#003733",
+                      "on-background": "#e5e2e1",
+                      "secondary": "#57dacd",
+                      "tertiary-container": "#00ab9f",
+                      "on-secondary-fixed": "#00201d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "32px",
+                      "md": "16px",
+                      "xs": "4px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "container-max": "1200px",
+                      "2xl": "64px",
+                      "3xl": "104px",
+                      "xl": "40px"
+              },
+              "fontFamily": {
+                      "display-2xl": ["Inter"],
+                      "footer-tiny": ["Inter"],
+                      "display-xl": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "display-2xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                      "footer-tiny": ["10px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "400"}],
+                      "display-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#2E2E2E]">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 h-24">
+<div class="text-2xl font-black text-white tracking-tighter font-inter uppercase">DR. LUCAS</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-white border-b border-[#F86D53] font-inter tracking-tight uppercase text-label-sm py-1" href="#">Especialidades</a>
+<a class="text-zinc-400 font-medium hover:text-white transition-all duration-300 font-inter tracking-tight uppercase text-label-sm" href="#">Sobre</a>
+<a class="text-zinc-400 font-medium hover:text-white transition-all duration-300 font-inter tracking-tight uppercase text-label-sm" href="#">Cursos</a>
+<a class="text-zinc-400 font-medium hover:text-white transition-all duration-300 font-inter tracking-tight uppercase text-label-sm" href="#">Contato</a>
+</div>
+<button class="bg-[#F86D53] text-black px-6 py-3 font-bold uppercase tracking-tight active:scale-95 transition-transform">
+                Agendar Consulta
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen pt-24 grid-bg flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0A0A0A]/60 to-[#0A0A0A]"></div>
+<div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+<div class="md:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 border border-[#F86D53]/30 bg-[#F86D53]/5 text-[#F86D53] w-fit mb-8">
+<span class="material-symbols-outlined text-[14px]">precision_manufacturing</span>
+<span class="font-inter text-label-sm tracking-widest uppercase">Tecnologia de Ponta</span>
+</div>
+<h1 class="font-display-2xl text-display-2xl text-white mb-6">
+                    CIRURGIA <span class="text-[#F86D53]">MAXILOFACIAL</span> DE ALTA PRECISÃO.
+                </h1>
+<p class="font-body-lg text-body-lg text-zinc-400 max-w-xl mb-10 leading-relaxed">
+                    Unindo Medicina Baseada em Evidências e as mais avançadas tecnologias de diagnóstico 3D para resultados previsíveis e recuperação acelerada.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-[#F86D53] text-black px-8 py-4 font-bold uppercase tracking-tight transition-all hover:bg-white active:scale-95">
+                        Conhecer Especialidades
+                    </button>
+<button class="border border-[#2E2E2E] text-white px-8 py-4 font-bold uppercase tracking-tight transition-all hover:border-white active:scale-95">
+                        Corpo Docente
+                    </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-square bg-[#111111] border border-[#2E2E2E] p-4 relative group">
+<img alt="Dr. Lucas Profissional" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a male surgeon in a modern dark medical office, dramatic lighting, sharp focus, monochromatic aesthetic with orange accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCce3yH3mqQ34j_aBzbaOnxjZ3Nw8-CyC2nMN2sO5k7xQ67kB3NCc4-SMqmr2p1mcqpWBlqXJ7jnGZZC1KoN1-9N2s9gh1TEoI1UM9_SYXbkoZ9KCk_jfF3PkO_xR-G7Ck5YF1q4z_UwjpwVSLRCJ4HyN3VCW98qCIFA7dc7PQWJ-4uilYoQQk4bLWmyes6Ib60G6TqhJCNZAOOAdqqrifOSoEqu0bEs0tjqaC4OMxTFIIc273URuIMgP544Nbulu8HwESGMgnYQ-ac"/>
+<div class="absolute -bottom-6 -left-6 bg-[#0A0A0A] border border-[#2E2E2E] p-6 hidden md:block">
+<div class="text-[#F86D53] font-bold text-headline-lg font-headline-lg">15+</div>
+<div class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-widest">Anos de Prática</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Specs / Specialty Grid -->
+<section class="py-3xl max-w-[1200px] mx-auto px-8">
+<div class="flex justify-between items-end mb-16 border-b border-[#2E2E2E] pb-8">
+<div>
+<h2 class="font-display-xl text-display-xl text-white uppercase tracking-tighter">Áreas de <span class="text-[#F86D53]">Atuação</span></h2>
+<p class="text-zinc-500 font-body-md text-body-md mt-2 uppercase tracking-widest">Protocolos Cirúrgicos Avançados</p>
+</div>
+<div class="hidden md:block text-right">
+<span class="material-symbols-outlined text-[#F86D53] text-[48px]">biotech</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#2E2E2E]">
+<!-- Spec Card 1 -->
+<div class="p-lg border-b md:border-b-0 md:border-r border-[#2E2E2E] hover:bg-[#111111] transition-colors group">
+<div class="flex justify-between items-start mb-12">
+<span class="text-[#F86D53] font-mono text-sm">01 //</span>
+<span class="material-symbols-outlined text-zinc-600 group-hover:text-white transition-colors">skull</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-4 uppercase tracking-tight">Ortognática</h3>
+<p class="text-zinc-400 font-body-md text-body-md mb-8">Planejamento virtual 3D para correção de deformidades dentofaciais com precisão milimétrica.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Virtual Surgical Planning
+                    </li>
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Custom Titanium Plates
+                    </li>
+</ul>
+</div>
+<!-- Spec Card 2 -->
+<div class="p-lg border-b md:border-b-0 md:border-r border-[#2E2E2E] hover:bg-[#111111] transition-colors group">
+<div class="flex justify-between items-start mb-12">
+<span class="text-[#F86D53] font-mono text-sm">02 //</span>
+<span class="material-symbols-outlined text-zinc-600 group-hover:text-white transition-colors">dentistry</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-4 uppercase tracking-tight">Implantes</h3>
+<p class="text-zinc-400 font-body-md text-body-md mb-8">Reabilitação oral complexa utilizando guias cirúrgicos prototipados e tecnologia de carga imediata.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Guided Bone Regeneration
+                    </li>
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Zygomatic Solutions
+                    </li>
+</ul>
+</div>
+<!-- Spec Card 3 -->
+<div class="p-lg hover:bg-[#111111] transition-colors group">
+<div class="flex justify-between items-start mb-12">
+<span class="text-[#F86D53] font-mono text-sm">03 //</span>
+<span class="material-symbols-outlined text-zinc-600 group-hover:text-white transition-colors">emergency</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-4 uppercase tracking-tight">Traumatologia</h3>
+<p class="text-zinc-400 font-body-md text-body-md mb-8">Tratamento especializado de fraturas faciais e reconstruções pós-traumáticas de alta complexidade.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Hard Tissue Reconstruction
+                    </li>
+<li class="flex items-center gap-2 text-footer-tiny text-zinc-500 uppercase tracking-widest">
+<div class="w-1.5 h-1.5 bg-[#F86D53]"></div> Microsurgery Ready
+                    </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Evidence Based Bio Section -->
+<section class="py-3xl bg-[#111111]">
+<div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-2xl items-center">
+<div class="order-2 md:order-1">
+<div class="aspect-[4/5] relative border border-[#2E2E2E]">
+<img alt="Academic Research" class="w-full h-full object-cover" data-alt="Macro photo of a surgical microscope and digital screens showing 3D anatomical models in a high-tech hospital lab setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6CCcDwVK32t8eJ8qN_LglJQ9dWRxLrDojIL_1sT2tL9q-r2sEWnImyf3xBMg86qAetbcpE6zZ1vNAekzgn2FBTINkM_IIA3IeKDApvCVhU6AYiXTWqwJ8eQImBfodQvckbpVlaSxGN5NbmqADiPIZgSs4V3nr2dgDaF860EiVySYuQaaTpgL4QHvf0SDJmeD30HGDDNIUAcjncZRDJU_s9W5G4VIcch0FfctUp6xwrNhMLuC9Wl1fs-pR8lm04mmHuSsIho7tP6_G"/>
+<div class="absolute inset-0 bg-[#F86D53]/10 mix-blend-overlay"></div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-display-xl text-display-xl text-white mb-8">A CIÊNCIA POR TRÁS DA <span class="text-[#F86D53]">ESTÉTICA</span>.</h2>
+<p class="font-body-lg text-body-lg text-zinc-400 mb-6 leading-relaxed">
+                    Dr. Lucas é Professor e Pesquisador, dedicando sua carreira ao desenvolvimento de técnicas que minimizam o trauma cirúrgico e otimizam a simetria facial.
+                </p>
+<div class="space-y-6">
+<div class="flex gap-4 p-4 border-l-2 border-[#F86D53] bg-[#0A0A0A]">
+<span class="material-symbols-outlined text-[#F86D53]">school</span>
+<div>
+<h4 class="text-white font-bold uppercase tracking-tight">Doutorado em Cirurgia</h4>
+<p class="text-zinc-500 text-sm">Foco em Biomateriais e Reconstrução Óssea.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 border-l-2 border-[#2E2E2E] hover:border-[#F86D53] transition-colors">
+<span class="material-symbols-outlined text-zinc-500">menu_book</span>
+<div>
+<h4 class="text-white font-bold uppercase tracking-tight">Professor Titular</h4>
+<p class="text-zinc-500 text-sm">Formando a próxima geração de cirurgiões especialistas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Trust Section -->
+<section class="py-2xl border-y border-[#2E2E2E]">
+<div class="max-w-[1200px] mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center md:text-left">
+<div class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-widest mb-2">Procedimentos</div>
+<div class="text-display-xl font-display-xl text-white">4.2k+</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-widest mb-2">Artigos Publicados</div>
+<div class="text-display-xl font-display-xl text-white">85</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-widest mb-2">Congressos</div>
+<div class="text-display-xl font-display-xl text-white">120+</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-widest mb-2">Países</div>
+<div class="text-display-xl font-display-xl text-white">12</div>
+</div>
+</div>
+</section>
+<!-- Education / Courses Bento -->
+<section class="py-3xl max-w-[1200px] mx-auto px-8">
+<h2 class="font-display-xl text-display-xl text-white mb-16 uppercase text-center">EDUCAÇÃO <span class="text-[#F86D53]">&amp;</span> MENTORIA</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-8 bg-[#111111] border border-[#2E2E2E] p-10 flex flex-col justify-end relative overflow-hidden group">
+<img alt="Surgical Training" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="Group of dental surgeons wearing blue scrubs watching a digital demonstration in a clean, brightly lit modern classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChToQEw85-jCGDXaTbYou6t6V3kkpkD56lFTjt97iuDYm5CogqIQj602A2x4Yw7b8YkHv9GsmXEMo9_pfKBAyFiGnesXfiew70wNw4uMOJs-bb9tXtKLPzbgrHLknkGoj9zeihnOXH1EH0JX7ULPERQ7RJbatx59lblsMy5Y8nDshkINkgVoFeyl6bdDHhD0dKwoagIw4VVTgroP2pbJV69LY0xy8QJk3MJI2R891bgdRq-2hSv42taLW1esdKv-qnhGoEXs-p_6EA"/>
+<div class="relative z-10">
+<span class="bg-[#F86D53] text-black text-[10px] font-bold px-2 py-1 mb-4 inline-block uppercase tracking-widest">Vagas Abertas</span>
+<h3 class="text-display-xl font-display-xl text-white mb-4 uppercase">Fellowship em Ortognática</h3>
+<p class="text-zinc-400 max-w-md mb-6">Imersão clínica e cirúrgica de 12 meses para especialistas que buscam o próximo nível em excelência técnica.</p>
+<button class="text-white border-b border-white pb-1 font-bold uppercase tracking-tight hover:text-[#F86D53] hover:border-[#F86D53] transition-colors">Ver Programa Completo</button>
+</div>
+</div>
+<div class="md:col-span-4 grid grid-rows-2 gap-6">
+<div class="bg-[#111111] border border-[#2E2E2E] p-8 flex flex-col justify-center hover:border-[#F86D53] transition-colors">
+<span class="material-symbols-outlined text-[#F86D53] mb-4">video_library</span>
+<h4 class="text-white font-bold uppercase tracking-tight mb-2">Cursos Online</h4>
+<p class="text-zinc-500 text-sm">Acesse módulos técnicos e estudos de caso complexos de qualquer lugar.</p>
+</div>
+<div class="bg-[#111111] border border-[#2E2E2E] p-8 flex flex-col justify-center hover:border-[#F86D53] transition-colors">
+<span class="material-symbols-outlined text-[#F86D53] mb-4">group</span>
+<h4 class="text-white font-bold uppercase tracking-tight mb-2">Mentoria VIP</h4>
+<p class="text-zinc-500 text-sm">Acompanhamento individual em casos cirúrgicos de alta complexidade.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0A0A0A] border-t border-[#2E2E2E] w-full py-12">
+<div class="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-bold text-white font-inter tracking-tighter uppercase">DR. LUCAS</div>
+<div class="flex gap-8">
+<a class="text-zinc-500 hover:text-[#F86D53] transition-colors font-inter text-xs tracking-widest uppercase" href="#">Privacidade</a>
+<a class="text-zinc-500 hover:text-[#F86D53] transition-colors font-inter text-xs tracking-widest uppercase" href="#">Termos</a>
+<a class="text-zinc-500 hover:text-[#F86D53] transition-colors font-inter text-xs tracking-widest uppercase" href="#">LinkedIn</a>
+</div>
+<div class="text-zinc-500 font-inter text-xs tracking-widest uppercase text-center md:text-right opacity-80">
+                © 2024 DR. LUCAS. MAXILLOFACIAL SURGERY &amp; EDUCATION.
+            </div>
+</div>
+</footer>
+</body></html>
